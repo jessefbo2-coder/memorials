@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harold Wayne Pruitt — A life remembered</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Newsreader:ital,wght@0,400;0,500;1,400&family=Work+Sans:wght@400;500;600&display=swap');
+
+  :root {
+    --bg: #ECE8DD;
+    --card: #FBF9F3;
+    --ink: #2E2B25;
+    --slate: #6E6A60;
+    --gold: #B8863E;
+    --teal: #3F5A54;
+    --hairline: rgba(46, 43, 37, 0.13);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Work Sans', sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page { max-width: 480px; margin: 0 auto; min-height: 100vh; }
+
+  .header { padding: 40px 24px 30px; text-align: center; }
+
+  .portrait {
+    width: 108px; height: 108px;
+    border-radius: 50%;
+    margin: 0 auto;
+    background: linear-gradient(150deg, #7C8A72, #4E5A44 60%, #38402F);
+    border: 3px solid var(--card);
+    box-shadow: 0 4px 18px rgba(46,43,37,0.18);
+  }
+
+  .name { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 34px; margin-top: 18px; }
+  .dates { margin-top: 4px; font-size: 14px; letter-spacing: 0.02em; color: var(--slate); }
+
+  .epitaph {
+    margin-top: 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--teal);
+    max-width: 26ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section { padding: 28px 24px; border-top: 1px solid var(--hairline); }
+  .section-title { font-family: 'Cormorant Garamond', serif; font-weight: 600; font-size: 21px; }
+  .section-sub { margin-top: 3px; font-size: 13px; color: var(--slate); }
+
+  .gallery {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 78px;
+    gap: 6px;
+  }
+
+  .g-photo { border-radius: 6px; }
+  .g-photo:nth-child(1) { grid-column: span 2; grid-row: span 2; background: linear-gradient(140deg, #6E7B5F, #3D4531); }
+  .g-photo:nth-child(2) { background: linear-gradient(140deg, #8C9A80, #5C6A4E); }
+  .g-photo:nth-child(3) { background: linear-gradient(140deg, #A69064, #7A6944); }
+  .g-photo:nth-child(4) { background: linear-gradient(140deg, #93A4A0, #647671); }
+  .g-photo:nth-child(5) { background: linear-gradient(140deg, #B3A578, #8B7E52); }
+
+  .gallery-more { margin-top: 12px; font-size: 13.5px; color: var(--teal); font-weight: 500; }
+
+  .memory {
+    margin-top: 16px;
+    background: var(--card);
+    border: 1px solid var(--hairline);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+
+  .memory:first-of-type { margin-top: 18px; }
+  .memory-text { font-family: 'Newsreader', serif; font-size: 15.5px; color: #38352E; }
+  .memory-by { margin-top: 10px; font-size: 12.5px; color: var(--slate); }
+  .memory-by strong { color: var(--ink); font-weight: 500; }
+
+  .add-form { margin-top: 18px; display: flex; flex-direction: column; gap: 10px; }
+  .add-form input, .add-form textarea {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid var(--hairline);
+    background: var(--card);
+    color: var(--ink);
+    resize: none;
+  }
+  .add-form textarea { min-height: 90px; }
+  .add-form ::placeholder { color: #9B968A; }
+
+  .submit-btn {
+    margin-top: 4px;
+    background: var(--teal);
+    color: #F3F1E9;
+    border: none;
+    padding: 13px 16px;
+    border-radius: 8px;
+    font-size: 14.5px;
+    font-weight: 500;
+    font-family: 'Work Sans', sans-serif;
+    cursor: pointer;
+  }
+
+  .footer { padding: 26px 24px 44px; text-align: center; }
+  .footer-line { font-size: 12.5px; color: var(--slate); }
+  .footer-brand { margin-top: 10px; font-size: 11.5px; color: #9B968A; }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <div class="header">
+    <div class="portrait"></div>
+    <div class="name">Harold Wayne Pruitt</div>
+    <div class="dates">June 14, 1938 – February 3, 2023</div>
+    <div class="epitaph">He never told a fish story the same way twice, and never once caught a fish smaller than his last telling.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Life in photos</div>
+    <div class="section-sub">Shared by the Pruitt family</div>
+    <div class="gallery">
+      <div class="g-photo"></div>
+      <div class="g-photo"></div>
+      <div class="g-photo"></div>
+      <div class="g-photo"></div>
+      <div class="g-photo"></div>
+    </div>
+    <div class="gallery-more">View all 21 photos</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Memories shared</div>
+    <div class="section-sub">7 memories from family and friends</div>
+
+    <div class="memory">
+      <div class="memory-text">Dad kept the same tackle box for forty years and could find any lure in it blind, in the dark, while telling you why it wasn't going to work today.</div>
+      <div class="memory-by"><strong>Mark Pruitt</strong> · son · Mar 2023</div>
+    </div>
+
+    <div class="memory">
+      <div class="memory-text">Every Saturday morning at the shop, he'd already have the coffee on and my name written on his whiteboard before I ever told him what I needed fixed.</div>
+      <div class="memory-by"><strong>Denny Church</strong> · friend · Apr 2023</div>
+    </div>
+
+    <div class="memory">
+      <div class="memory-text">Grandpa taught me to whittle on the back porch, and I still have the first crooked little boat I made him keep.</div>
+      <div class="memory-by"><strong>Casey Pruitt</strong> · granddaughter · Jun 2023</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Add your memory</div>
+    <div class="section-sub">Anyone who knew him is welcome to share</div>
+    <div class="add-form">
+      <input type="text" placeholder="Your name">
+      <input type="text" placeholder="How you knew him">
+      <textarea placeholder="Share a memory, a story, or what you'd want him to know"></textarea>
+      <button class="submit-btn">Share this memory</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-line">This page is cared for by the Pruitt family.</div>
+    <div class="footer-brand">Memorial page enabled by StoneRenew</div>
+  </div>
+
+</div>
+
+</body>
+</html>
